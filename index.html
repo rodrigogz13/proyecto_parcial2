@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio rodrigo</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="logo-container">
+                <span class="logo-text">LOGO</span>
+                <span class="custom-text">CUSTOM</span>
+            </a>
+            <div class="menu-button">
+                <span class="menu-text">MENU</span>
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <ul class="nav-links" id="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('.menu-button');
+            const mainMenu = document.getElementById('mainMenu');
+            const menuIcon = document.querySelector('.menu-icon');
+
+            function toggleMenu() {
+                mainMenu.classList.toggle('active');
+                menuIcon.classList.toggle('active');
+            }
+
+            if (menuButton) {
+                menuButton.addEventListener('click', toggleMenu);
+            }
+        });
+    </script>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, my name is Rodrigo</h1>
+            <hr class="separator">
+            <p class="subtitle">MIS GRANDES RETOS EN MI CARRERA SON ... ET ORCI EU LOREM CONSEQUAT TINCIDUNT VIVAMUS ET
+                SAGIT.</p>
+            <a href="#" class="portfolio-button">
+                PORTAFOLIO
+            </a>
+        </div>
+    </main>
+
+    <section class="grid-section">
+
+        <a href="#" class="grid-item item-1">
+            <div class="text-content">
+                <h2>Aliquam</h2>
+                <hr class="item-separator">
+                <p>IPSUM DOLOR SIT AMET</p>
+            </div>
+        </a>
+
+        <a href="#" class="grid-item item-2">
+            <div class="text-content">
+                <h2>Tempus</h2>
+                <hr class="item-separator">
+                <p>FEUGIAT AMET TEMPUS</p>
+            </div>
+        </a>
+
+        <a href="#" class="grid-item item-3">
+            <div class="text-content">
+                <h2>Magna</h2>
+                <hr class="item-separator">
+                <p>LOREM ETIAM NULLAM</p>
+            </div>
+        </a>
+
+        <a href="#" class="grid-item item-4">
+            <div class="text-content">
+                <h2>Ipsum</h2>
+                <hr class="item-separator">
+                <p>NISL SED ALIQUAM</p>
+            </div>
+        </a>
+
+    </section>
+
+    <section class="mixed-layout-section">
+
+        <div class="top-columns-container">
+
+            <a href="#" class="column-item item-blue">
+                <div class="column-text-content">
+                    <h2>Consequat</h2>
+                    <hr class="column-separator">
+                    <p>IPSUM DOLOR SIT AMET</p>
+                </div>
+            </a>
+
+            <a href="#" class="column-item item-green">
+                <div class="column-text-content">
+                    <h2>Etiam</h2>
+                    <hr class="column-separator">
+                    <p>FEUGIAT AMET TEMPUS</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="bottom-full-width-block">
+            <div class="block-content">
+
+                <h2 class="block-title">Massa libero</h2>
+                <hr class="block-separator">
+
+                <p class="block-paragraph">
+                    Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna
+                    sed nunc rhoncus pharetra. Pellentesque
+                    condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque
+                    lorem ipsum dolor. Nullam et orci eu lorem consequat
+                    tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra et
+                    feugiat tempus.
+                </p>
+
+                <a href="#" class="block-button">
+                    GET STARTED
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-form-area">
+                <form action="#" method="POST" class="contact-form">
+
+                    <div class="input-group-half">
+                        <div class="input-field">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-field full-width">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-send">SEND MESSAGE</button>
+                        <button type="reset" class="btn btn-clear">CLEAR</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="contact-info-area">
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <div class="info-details">
+                        <p class="info-title">Email</p>
+                        <a href="mailto:info@gmail.com" class="info-link">info@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <div class="info-details">
+                        <p class="info-title">Phone</p>
+                        <p>(000) 000-0000 x12387</p>
+                    </div>
+                </div>
+
+                <div class="info-item address-item">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <div class="info-details">
+                        <p class="info-title">Address</p>
+                        <p>1234 Somewhere Road #5432</p>
+                        <p>Nashville, TN 00000</p>
+                        <p>Morelia, Méx</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <p class="copyright-text">
+                &copy; 2025 rodri | Design: UVAQ
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
